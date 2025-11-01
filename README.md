@@ -1,13 +1,13 @@
 # 🛒 Shoplifting Detection Using YOLOv11n
 
-This project detects **shoplifting behavior** in retail store footage using **YOLOv12** — a state-of-the-art deep learning object detection model.  
+This project detects **shoplifting behavior** in retail store footage using **YOLOv11** — a state-of-the-art deep learning object detection model.  
 It distinguishes between **Normal** and **Shoplifting** behavior from live video or CCTV footage in real time.
 
 ---
 
 ## 🚀 Features
 
-- ⚡ Real-time detection using YOLOv11n
+- ⚡ Real-time detection using YOLOv11
 - 📸 Works with webcam or video input
 - 🧾 Automatically logs detections to CSV
 - 💾 Saves annotated frames and videos
@@ -21,7 +21,7 @@ It distinguishes between **Normal** and **Shoplifting** behavior from live video
 ```
 Shoplifting-Detection/
 │
-├── _object_detection.ipynb   # YOLOv11n training notebook
+├── _object_detection.ipynb   # YOLOv11 training notebook
 ├── detect_shoplift.py                     # Real-time detection script
 ├── best.pt                                # Trained model weights
 ├── demo1.mp4                              # Test video file
@@ -47,14 +47,14 @@ If you’re using Visual Studio Code, make sure your Python environment is selec
 
 ---
 
-## ⚙️ How to Train the Model (YOLOv12)
+## ⚙️ How to Train the Model (YOLOv11)
 
 If you already have `best.pt`, skip this section.
 
 1. Open the file **`train_yolov11n_object_detection.ipynb`**.
 2. Run all cells step-by-step to:
    - Load the dataset
-   - Train YOLOv11n on two classes: **Normal** and **Shoplifting**
+   - Train YOLOv11 on two classes: **Normal** and **Shoplifting**
    - Save the best model as `best.pt`
 
 The trained weights will appear at:
@@ -128,7 +128,7 @@ The script will:
 
 ## 🧠 Detection Logic Overview
 
-1. **YOLOv11n** predicts bounding boxes and confidence scores.
+1. **YOLOv11** predicts bounding boxes and confidence scores.
 2. Script checks:
    - If class = `shoplifting` → high confidence → alert!
    - If class = `normal` → green bounding box (safe)
@@ -202,4 +202,5 @@ All datasets and videos should comply with their respective licenses.
 
 **👩‍💻 Developed by:** Maryam Fazal Gill  
 **📅 Year:** 2025
+
 
