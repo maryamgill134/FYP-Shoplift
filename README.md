@@ -7,7 +7,7 @@ It distinguishes between **Normal** and **Shoplifting** behavior from live video
 
 ## 🚀 Features
 
-- ⚡ Real-time detection using YOLOv12
+- ⚡ Real-time detection using YOLOv11n
 - 📸 Works with webcam or video input
 - 🧾 Automatically logs detections to CSV
 - 💾 Saves annotated frames and videos
@@ -21,7 +21,7 @@ It distinguishes between **Normal** and **Shoplifting** behavior from live video
 ```
 Shoplifting-Detection/
 │
-├── _object_detection.ipynb   # YOLOv12 training notebook
+├── _object_detection.ipynb   # YOLOv11n training notebook
 ├── detect_shoplift.py                     # Real-time detection script
 ├── best.pt                                # Trained model weights
 ├── demo1.mp4                              # Test video file
@@ -202,3 +202,4 @@ All datasets and videos should comply with their respective licenses.
 
 **👩‍💻 Developed by:** Maryam Fazal Gill  
 **📅 Year:** 2025
+
